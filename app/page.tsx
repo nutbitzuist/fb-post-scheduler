@@ -665,7 +665,7 @@ export default function Home() {
                   <div className="field" key={key}>
                     <label>{label}</label>
                     <input type="password" placeholder={ph}
-                      value={(cfg as Record<string, string>)[key]}
+                      value={(cfg as any)[key]}
                       onChange={e => setCfg({ ...cfg, [key]: e.target.value })} />
                   </div>
                 ))}
